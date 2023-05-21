@@ -1,6 +1,6 @@
 {
 	"name": "astro-critters-slim",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"type": "module",
 	"description": "🦔 Minimal Critters integration for astro.js",
 	"repository": {
