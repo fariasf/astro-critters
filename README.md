@@ -18,12 +18,12 @@ The integration does not come with any options itsefl. For configuration head ov
 To use the defaults as per critters
 
 ```ts
-import critters from "astro-critters";
+import crittersSlim from "astro-critters-slim";
 
 export default {
   integrations: [
     // You want critters to run as late as possible
-    critters()
+    crittersSlim()
   ],
 };
 ```
@@ -31,11 +31,11 @@ export default {
 Some noteworthy options
 
 ```ts
-import critters from "astro-critters";
+import crittersSlim from "astro-critters-slim";
 
 export default {
   integrations: [
-    critters({
+    crittersSlim({
       path: './path/to/your/dist', // path to your astro-build if somewhere special (default: './dist')
       pruneSource: true, // 🚨 Not supported and kind a broken in critters anyway (default: false)
     })
