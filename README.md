@@ -21,10 +21,10 @@ To use the defaults as per critters
 import critters from "astro-critters";
 
 export default {
-	integrations: [
-		// You want critters to run as late as possible
-		critters()
-	],
+  integrations: [
+    // You want critters to run as late as possible
+    critters()
+  ],
 };
 ```
 
@@ -34,12 +34,12 @@ Some noteworthy options
 import critters from "astro-critters";
 
 export default {
-	integrations: [
-		critters({
-			path: './path/to/your/dist', // path to your astro-build if somewhere special (default: './dist')
-			pruneSource: true, // 🚨 Not supported and kind a broken in critters anyway (default: false)
-		})
-	],
+  integrations: [
+    critters({
+      path: './path/to/your/dist', // path to your astro-build if somewhere special (default: './dist')
+      pruneSource: true, // 🚨 Not supported and kind a broken in critters anyway (default: false)
+    })
+  ],
 };
 ```
 
