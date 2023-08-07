@@ -1,4 +1,4 @@
-import { bold, cyan, dim, red, green } from "kleur/colors";
+import { bold, cyan, dim, red, green, yellow } from "kleur/colors";
 
 const pkgName = "astro-critters-slim";
 
@@ -26,4 +26,8 @@ const success = (msg) => {
   console.log(`${prefix(green)} ${msg}`);
 };
 
-export default { info, error, success };
+const warn = (msg) => {
+  console.log(`${prefix(yellow)} ${msg}`);
+};
+
+export default { info, error, success, warn };
